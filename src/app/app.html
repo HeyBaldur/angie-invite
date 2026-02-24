@@ -1,4 +1,4 @@
-<div
+<!-- <div
   class="relative min-h-screen bg-[#f2c1b6] p-4 md:p-10 flex items-center justify-center font-sans overflow-hidden"
 >
   <div class="particles-wrapper absolute inset-0 pointer-events-none">
@@ -64,8 +64,9 @@
         </ul>
 
         <p class="text-gray-800 leading-relaxed max-w-sm mx-auto lg:mx-0 mb-10 text-sm">
-          Nos complace invitarle a la celebración de los quince años de Angie T. Ávila Jaubert. Un
-          momento de alegría, familia y recuerdos que perdurarán para siempre
+          Nos complace invitarle a la celebración de los quince años de
+          <span class="font-semibold">Angie T. Ávila Jaubert</span>. Un momento de alegría, familia
+          y recuerdos que perdurarán para siempre
         </p>
 
         <button
@@ -77,4 +78,75 @@
     </div>
   </div>
 </div>
+<router-outlet /> -->
+
+
+<div class="relative min-h-screen bg-gradient-to-br from-[#f7c9d3] via-[#f3b7c7] to-[#f8dbe4] flex items-center justify-center px-5 py-12 overflow-hidden">
+
+  <!-- Soft Glow Background -->
+  <div class="absolute inset-0">
+    <div class="absolute w-72 h-72 bg-white/30 rounded-full blur-3xl top-[-80px] left-[-50px] animate-glow"></div>
+    <div class="absolute w-96 h-96 bg-pink-200/40 rounded-full blur-3xl bottom-[-120px] right-[-60px] animate-glow-slow"></div>
+  </div>
+
+  <!-- Floating Sparkles -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="sparkle top-[15%] left-[20%]"></div>
+    <div class="sparkle top-[40%] right-[15%]"></div>
+    <div class="sparkle bottom-[25%] left-[30%]"></div>
+  </div>
+
+  <!-- Invitation Card -->
+  <div class="relative z-10 w-full max-w-md bg-white/95 backdrop-blur-lg rounded-[40px] shadow-[0_20px_60px_rgba(0,0,0,0.15)] px-8 py-10 text-center animate-rise">
+
+    <!-- Imagen -->
+    <div class="mb-8 relative">
+      <img src="images/15.jpeg"
+           class="rounded-[30px] shadow-xl object-cover w-full max-h-[380px] animate-soft-appear">
+      <div class="absolute inset-0 rounded-[30px] ring-4 ring-white/40"></div>
+    </div>
+
+    <!-- Texto superior -->
+    <p class="tracking-[0.4em] text-xs uppercase text-[#9c6f7f] mb-4 animate-fade">
+      Te invito a
+    </p>
+
+    <!-- Nombre -->
+    <h1 class="text-4xl font-bold text-[#5e3a46] mb-2 leading-tight animate-fade-delay">
+      MIS 15 AÑOS
+    </h1>
+
+    <h2 class="text-lg text-[#8a5b6c] italic mb-6 animate-fade-delay2">
+      Un momento mágico
+    </h2>
+
+    <!-- Fecha elegante -->
+    <div class="bg-[#f8e3ea] rounded-2xl py-4 px-6 mb-6 shadow-inner animate-fade-delay3">
+      <p class="text-sm text-[#5e3a46] font-semibold">16 de mayo 2026</p>
+      <p class="text-sm text-[#7c5565]">2:30 PM</p>
+    </div>
+
+    <!-- Ubicación -->
+    <p class="text-sm text-[#6e4b58] mb-8 px-4 leading-relaxed animate-fade-delay4">
+      Casa de la cultura<br>
+      de la iglesia católica 50 metros al norte
+    </p>
+
+    <!-- Descripción -->
+    <p class="text-xs text-[#6e4b58] mb-8 leading-relaxed animate-fade-delay5">
+      Nos complace invitarle a la celebración de los quince años de
+      <span class="font-semibold">Angie T. Ávila Jaubert</span>.
+      Un momento de alegría, familia y recuerdos que perdurarán para siempre.
+    </p>
+
+    <!-- Botón -->
+    <button
+      class="bg-gradient-to-r from-[#d98ca0] to-[#c9788d] text-white px-10 py-3 rounded-full text-xs tracking-widest font-bold shadow-lg hover:shadow-2xl transition-all duration-300 active:scale-95 animate-fade-delay6">
+      Confirmar asistencia
+    </button>
+
+  </div>
+
+</div>
+
 <router-outlet />
